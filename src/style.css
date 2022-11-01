@@ -5,7 +5,7 @@ body {
 }
 section {
   background: white;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 100%;
 }
 
@@ -151,4 +151,13 @@ hr {
 a {
   text-decoration: none;
   color: #fff;
+}
+
+@media only screen and (max-width: 375px) {
+  section {
+    width: 100%;
+  }
+  .main-area {
+    width: 375px;
+  }
 }
