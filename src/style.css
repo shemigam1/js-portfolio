@@ -1,32 +1,20 @@
 body {
   font-family: "Poppins", sans-serif;
-  margin: 0;
-  overflow-x: hidden;
 }
 section {
   background: white;
   /* border: 1px solid black; */
-  width: 100%;
 }
 
 .main {
   background-color: #1c1d25;
-  height: 100vh;
   color: #fff;
   font-size: 40px;
 }
 nav {
-  display: flex;
-  justify-content: space-between;
 }
 
 ul {
-  display: flex;
-  list-style-type: none;
-  width: 500px;
-  justify-content: space-around;
-  font-size: 30px;
-  /* margin-top: 30px; */
 }
 li {
   /* width: 200px; */
@@ -35,7 +23,6 @@ li {
 
 h1 {
   font-size: 60px;
-  margin: 0;
 }
 h2 {
   font-size: 50px;
@@ -43,18 +30,11 @@ h2 {
 p {
   font-weight: 300;
   font-size: 30px;
-  margin: 0;
 }
 .main-area {
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .main-text {
-  margin-left: 80px;
-  margin-bottom: 200px;
 }
 
 .btn {
@@ -64,9 +44,7 @@ p {
   border-radius: 30px;
   text-align: center;
   font-weight: 300;
-  font-size: 30px;
-  padding-top: 5px;
-  margin-top: 20px;
+
   cursor: pointer;
 }
 
@@ -78,20 +56,13 @@ p {
   color: #808080;
 }
 .socials {
-  padding-bottom: 200px;
 }
 .social {
-  margin: 20px;
 }
 .logo {
-  height: 80px;
-  margin: 30px;
 }
 
 .sub-section {
-  display: flex;
-  align-items: space-around;
-  padding-left: 80px;
 }
 .sub-section-alt {
   display: flex;
@@ -107,7 +78,6 @@ footer {
   background: #000;
   color: #fff;
   text-align: center;
-  padding: 80px;
 }
 
 .project-card {
@@ -124,40 +94,47 @@ footer {
   justify-content: space-around;
 }
 
-@media only screen and (max-width: 1000px) {
-  .project-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  ul {
-    display: none;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-
-.project-img {
-  width: 190px;
-  border-radius: 100px;
-  margin-top: 25px;
+* {
+  margin: 0;
 }
-hr {
-  margin: 0 20px;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
-
-.project-link {
-  text-decoration: none;
-  color: #ef744b;
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
-a {
-  text-decoration: none;
-  color: #fff;
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
 }
-
-@media only screen and (max-width: 375px) {
-  section {
-    width: 100%;
-  }
-  .main-area {
-    width: 375px;
-  }
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
 }
